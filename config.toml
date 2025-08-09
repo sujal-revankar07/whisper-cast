@@ -1,0 +1,16 @@
+[audio]
+sample_rate = 16000
+chunk_size = 480
+# silence_timeout = 0.5  # seconds of silence to stop capture (future use)
+
+[transcription]
+model_size = "base"
+device = "auto"  # "cuda" if you have an NVIDIA GPU
+compute_type = "int8"  # "float16" or "int8"
+beam_size = 1
+batch_size = 4
+language="en"
+
+[hotkeys]
+start_stop = "<ctrl>+<shift>+r"
+exit = "<ctrl>+<shift>+q"
